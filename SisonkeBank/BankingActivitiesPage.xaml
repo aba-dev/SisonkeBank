@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SisonkeBank.BankingActivitiesPage"
+             Title="Banking Activities">
+
+    <StackLayout>
+        <!-- Example: Displaying banking activities -->
+        <Label Text="Recent Transactions" FontSize="Title" HorizontalOptions="Center" Margin="0,20,0,10" />
+
+        <ListView x:Name="transactionsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding Date}" />
+                            <Label Text="{Binding Description}" />
+                            <Label Text="{Binding Amount}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
+
+

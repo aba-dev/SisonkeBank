@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SisonkeBank.MainPage"
+             Title="Accounts">
+    
+    <StackLayout Padding="20">
+        <Label x:Name="welcomeLabel" FontSize="Large" HorizontalOptions="Center" />
+        <Button Text="Banking Activities" Clicked="OnViewBankingActivitiesClicked" />
+        <Button Text="View Account Balance" Clicked="OnViewAccountBalanceClicked" />
+        <Button Text="Transfer Between Accounts" Clicked="OnTransferBetweenAccountsClicked" />
+        <Button Text="Logout" Clicked="OnLogoutClicked" />
+    </StackLayout>
+</ContentPage>
+

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SisonkeBank.TransferBetweenAccountsPage"
+             Title="Transfer Funds"
+             BackgroundColor="White">
+    
+    <StackLayout Padding="10">
+        <Label Text="Transfer Funds" FontSize="Large" HorizontalOptions="Center" />
+        <Label x:Name="currentAccountBalanceLabel" />
+        <Label x:Name="savingsAccountBalanceLabel" />
+        <Entry x:Name="amountEntry" Placeholder="Enter Amount" Keyboard="Numeric" />
+        <Picker x:Name="transferDirectionPicker" Title="Transfer Direction">
+            <Picker.Items>
+                <x:String>Current to Savings</x:String>
+                <x:String>Savings to Current</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button Text="Transfer" Clicked="OnTransferClicked" />
+        <Button Text="Back" Clicked="OnBackClicked" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SisonkeBank.LoginPage"
+             Title = "Hello there :)" 
+             BackgroundColor="White">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Image Source="BankApp_logo.png" HeightRequest="400" WidthRequest="500" VerticalOptions="CenterAndExpand" />
+            <Entry x:Name="emailEntry" Placeholder="Email" Keyboard="Email" />
+            <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" />
+            <Button Text="Login" Clicked="OnLoginClicked" />
+            <Button Text="Register" Clicked="OnRegisterClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
