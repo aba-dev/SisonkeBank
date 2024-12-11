@@ -1,12 +1,3 @@
-﻿/* Name of the file: ViewAccountBalancePage.xaml.cs
-*Name of the author: Abisola O Adeyanju
-*Date created: 19/06/2024
-*Operating system: Cross-platform
-*Version: 1.0
-*Description of the code: Code-behind for the page displaying account balances in the Sisonke Bank app. Retrieves and displays user account balances.
-*/
-
-
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
