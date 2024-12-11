@@ -1,11 +1,3 @@
-﻿/* Name of the file: RegistrationPage.xaml.cs
-*Name of the author: Abisola O Adeyanju
-*Date created: 19/06/2024
-*Operating system: Cross-platform
-*Version: 1.0
-*Description of the code: Code-behind for the registration page of the Sisonke Bank app. Handles user registration and validation.
-*/
-
 using System;
 using System.Text.RegularExpressions;
 using Xamarin.Forms;
